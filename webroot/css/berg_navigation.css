@@ -1,0 +1,45 @@
+/**
+ *  header and navigation css
+ */
+.berg_page-header{
+    height: 200px;
+    padding-top: 60px;
+    color: #EEEEEE;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.berg_background-blue{
+    background-color: #3D6EA9; 
+}
+
+.berg_navbar {
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);    
+}
+.berg_nav_button_basic {
+    font-family: 'AvenirNext-Regular';
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    float: left;
+}
+
+.berg_nav_button_basic:hover {
+    background-color: #104584;
+}
+
+.berg_text-white {
+    font-family: 'AvenirNext-Regular';
+    color: white;
+    text-decoration: none;
+}
+
+.berg_text-white:hover {
+    color: white;
+    text-decoration: none;
+}

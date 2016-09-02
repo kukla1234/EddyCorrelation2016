@@ -6,6 +6,6 @@ $this->element('cake_php_header')
 <?= $this->element('head') ?>
 <?= $this->element('navbar') ?>
 <body class="home">
-    <p>Hellow World, fl sediments.</p>
+    <p>Hellow World, publications.</p>
 </body>
 </html>

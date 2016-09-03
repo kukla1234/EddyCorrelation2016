@@ -6,7 +6,7 @@
     padding-bottom: 50px;
     color: #EEEEEE;
     text-align: center;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);    
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
 }
 
 .berg_background-blue{
@@ -122,7 +122,7 @@
 
 .berg_menu-icon {
     height: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .berg_menu-icon:hover {

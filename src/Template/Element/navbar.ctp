@@ -6,7 +6,7 @@
 
 <div class='berg_hide berg_nav-dropdown berg_padding-left berg_background-blue' id='menu-dropdown'>
   <ul class='berg_nav-list'> 
-    <a class='berg_text-blue' href="/principles"><li class='berg_nav-list-item'>Home</li></a>
+    <a class='berg_text-blue' href="/"><li class='berg_nav-list-item'>Home</li></a>
     <a class='berg_text-blue' href="/principles/"><li class='berg_nav-list-item'>Principles</li></a>
     <a class='berg_text-blue' href="/publications"><li class='berg_nav-list-item'>Publications</li></a>
     <a class='berg_text-blue' href="/team"><li class='berg_nav-list-item'>Team</li class='berg_nav-list-item'></a>

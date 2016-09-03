@@ -16,4 +16,5 @@ $this->element('cake_php_header')
 <body class="home">
     <p>Hellow World, weblinks.</p>
 </body>
+<?= $this->element('footer') ?>
 </html>

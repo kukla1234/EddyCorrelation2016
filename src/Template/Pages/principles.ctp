@@ -35,6 +35,7 @@ $this->element('cake_php_header')
           </p>
         </div>
       </div>
+
       <div class='berg_image-container berg_image-bottom-weight'>
         <div class="carousel" data-flickity>
           <div class="carousel-cell">

@@ -19,7 +19,7 @@
 }
 
 .berg_background-blue{
-    background-color: white; 
+    background-color: #12437D; 
     color: black;
     text-decoration: none;
 }
@@ -50,7 +50,7 @@
 }
 
 .berg_nav-list-item:hover {
-    color: white;
+    color: #104584;
 }
 
 .berg_nav-list-divider {
@@ -58,16 +58,15 @@
     padding-top: 5px;
     padding-left: 40px;
     font-family: 'AvenirNext-Bold';
-    font-size: .85rem;
+    font-size: .80rem;
     background-color: rgba(0,0,0,0.1);
 }
 
 .berg_nav-list-item:hover {
-    background-color: #104584;
+    background-color: white;
 }
 
 .berg_nav-dropdown {
-
     width: 200px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -139,7 +138,7 @@
 
 .berg_menu-icon {
     height: 20px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .berg_menu-icon:hover {

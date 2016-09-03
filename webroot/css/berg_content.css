@@ -58,7 +58,7 @@ p {
 }
 
 .berg_content-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center;
 }
 
@@ -97,4 +97,25 @@ p {
 
 .berg_carousel-image {
     width: 700px;
+}
+
+
+.berg_citation-pdf-tag {  
+    padding-left:10px;
+    display: inline-block;
+    font-size: 75%; 
+} 
+
+.berg_citation-wrapper{
+
+}
+
+.berg_citation-text{
+    text-decoration: none;
+    color: black;
+    font-size: .75rem;
+}
+
+.berg_citation-hover:hover {
+    background-color: #f6f6f6;
 }

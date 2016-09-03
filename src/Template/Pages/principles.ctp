@@ -17,8 +17,8 @@ $this->element('cake_php_header')
   <div class='berg_content'>
       <h2 class='berg_content-title'>
           Basic Principles
-          
       </h2>
+      
       <div class='berg_image-container'>
         <object class='berg_rounded_8' data="<?= $this->request->webroot.'vid/pberg_anim_nosound.swf'?>" width="700" height="575" type="application/x-shockwave-flash">
             <param name="pluginurl" value="http://www.macromedia.com/go/getflashplayer" />

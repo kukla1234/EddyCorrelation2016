@@ -1,4 +1,12 @@
-<?php
+<!-- 
+ * Description: photo Gallery
+ *
+ * @author    Elizabeth Kukla <elizabeth.kukla@gmail.com>
+ * @date      03.09.16
+ * @copyright All rights reserved.
+ */
+ -->
+ <?php
 $this->element('cake_php_header') 
 ?>
 <!DOCTYPE html>

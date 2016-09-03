@@ -1,3 +1,11 @@
+<!-- 
+ * Description: Examples page - Florida Permiable sediments
+ *
+ * @author    Elizabeth Kukla <elizabeth.kukla@gmail.com>
+ * @date      03.09.16
+ * @copyright All rights reserved.
+ */
+ -->
 <?php
 $this->element('cake_php_header') 
 ?>
@@ -8,5 +16,5 @@ $this->element('cake_php_header')
 <body class="home">
     <p>Hellow World, fl sediments.</p>
 </body>
-<?= $this->element('footer') ?>
+<?= $this->element('navbar') ?>
 </html>

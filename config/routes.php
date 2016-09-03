@@ -51,18 +51,14 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/cake_php_info', ['controller' => 'Pages', 'action' => 'display', 'cake_php_info']);
 
+    // Eddy Corrlation website routes
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
     $routes->connect('/team', ['controller' => 'Pages', 'action' => 'display', 'team']);
-
     $routes->connect('/principles', ['controller' => 'Pages', 'action' => 'display', 'principles']);
-
     $routes->connect('/publications', ['controller' => 'Pages', 'action' => 'display', 'publications']);
-
     $routes->connect('/gallery', ['controller' => 'Pages', 'action' => 'display', 'gallery']);
     $routes->connect('/presentations', ['controller' => 'Pages', 'action' => 'display', 'presentations']);
     $routes->connect('/weblinks', ['controller' => 'Pages', 'action' => 'display', 'weblinks']);
-
     $routes->connect('/example-gulf', ['controller' => 'Pages', 'action' => 'display', 'example1']);
     $routes->connect('/example-fl-reef', ['controller' => 'Pages', 'action' => 'display', 'example2']);
     $routes->connect('/example-fl-sediments', ['controller' => 'Pages', 'action' => 'display', 'example3']);

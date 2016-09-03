@@ -1,3 +1,11 @@
+<!-- 
+ * Description: Home page, Eddy Correlation
+ *
+ * @author    Elizabeth Kukla <elizabeth.kukla@gmail.com>
+ * @date      03.09.16
+ * @copyright All rights reserved.
+ */
+ -->
 <?php
 $this->element('cake_php_header') 
 ?>
@@ -31,8 +39,9 @@ $this->element('cake_php_header')
             </p>
         </div>
         <div class='berg_float-right berg_home-content-right'>
-            <?php echo $this->Html->image('home/homepage1.jpg', ['alt' => 'Eddy Correlation 1', 'class' => 'berg_home-image']); ?>
-            <?php echo $this->Html->image('home/homepage2.jpg', ['alt' => 'Eddy Correlation 2', 'class' => 'berg_home-image']); ?>
+            <?php 
+            echo $this->Html->image('home/homepage1.jpg', ['alt' => 'Eddy Correlation 1', 'class' => 'berg_home-image']); 
+            echo $this->Html->image('home/homepage2.jpg', ['alt' => 'Eddy Correlation 2', 'class' => 'berg_home-image']); ?>
         </div> 
         <div class='berg_clear-floats berg_content-single-pane'>
             <p>

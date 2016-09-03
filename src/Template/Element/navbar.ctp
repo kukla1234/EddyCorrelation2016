@@ -1,3 +1,12 @@
+<!-- 
+ * Description: Navigation bar for Eddy Correlation website
+ *
+ * @author    Elizabeth Kukla <elizabeth.kukla@gmail.com>
+ * @date      03.09.16
+ * @copyright All rights reserved.
+ */
+ -->
+
 <nav class='berg_background-blue berg_navbar'>
   <div class='berg_padding-left'>
     <?php echo $this->Html->image('menu_icon.png', ['alt' => 'Menu', 'class' => 'berg_menu-icon', 'id' => 'berg_menu-icon']); ?>

@@ -1,4 +1,13 @@
 /**
+ * Description: Style Sheets for navigation and 
+ * footer elements.
+ *
+ * @author    Elizabeth Kukla <elizabeth.kukla@gmail.com>
+ * @date      03.09.16
+ * @copyright All rights reserved.
+ */
+
+/**
  *  header and navigation css
  */
 .berg_page-header{
@@ -21,6 +30,12 @@
     text-decoration: none;
 }
 
+.berg_background-white{
+    background-color: white; 
+    text-decoration: none;
+    font-family: 'AvenirNext-Regular';
+}
+
 .berg_nav-list {
     list-style: none;
     font-size: .75rem;
@@ -37,8 +52,6 @@
 .berg_nav-list-item:hover {
     color: white;
 }
-
-
 
 .berg_nav-list-divider {
     padding-bottom: 5px;
@@ -99,6 +112,10 @@
     text-decoration: none;
 }
 
+.berg_text-footer {
+  font-size: .75rem;
+}
+
 .berg_text-blue {
     font-family: 'AvenirNext-Regular';
     color: #245B9C;
@@ -127,4 +144,27 @@
 
 .berg_menu-icon:hover {
     background-color: rgba(0,0,0,0.3);
+}
+
+.berg_page-footer{
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgba(0,0,0,0.1);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
+}
+
+.berg_footer-content-center {
+  overflow:hidden;
+  display: inline-table;
+  zoom:1;
+}
+
+.berg_footer-logos {
+  max-height: 100px;
+  height: 50%;
+  padding: 0 10%;
 }

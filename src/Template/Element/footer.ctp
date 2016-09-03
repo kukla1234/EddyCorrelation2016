@@ -40,4 +40,6 @@
         <div class='berg_clear-floats'></div>
     </div>
     <?= $this->Html->script('jquery-3.1.0'); ?>
+    <?= $this->Html->script('flickity.pkgd'); ?>
+
 </div>

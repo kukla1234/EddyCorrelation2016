@@ -21,5 +21,6 @@
     <?= $this->Html->css('bootstrap-nav.css') ?>
     <?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('berg_content.css') ?>
+    <?= $this->Html->css('flickity.css') ?>    
     
 </head>

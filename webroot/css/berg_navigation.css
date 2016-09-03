@@ -2,14 +2,20 @@
  *  header and navigation css
  */
 .berg_page-header{
-    height: 150px;
     padding-top: 60px;
+    padding-bottom: 50px;
     color: #EEEEEE;
-    margin-top: -25px;
     text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);    
 }
 
 .berg_background-blue{
+    background-color: white; 
+    color: black;
+    text-decoration: none;
+}
+
+.berg_background-light-blue{
     background-color: #3D6EA9; 
     color: white;
     text-decoration: none;
@@ -28,13 +34,19 @@
     padding-left: 40px;
 }
 
+.berg_nav-list-item:hover {
+    color: white;
+}
+
+
+
 .berg_nav-list-divider {
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 40px;
-    background-color: #245B9C;
     font-family: 'AvenirNext-Bold';
     font-size: .85rem;
+    background-color: rgba(0,0,0,0.1);
 }
 
 .berg_nav-list-item:hover {
@@ -46,6 +58,7 @@
     width: 200px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
     padding-top: 10px;
     padding-bottom: 15px;
     position: absolute;
@@ -57,6 +70,9 @@
 }
 
 .berg_navbar {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
 }
@@ -83,6 +99,18 @@
     text-decoration: none;
 }
 
+.berg_text-blue {
+    font-family: 'AvenirNext-Regular';
+    color: #245B9C;
+    text-decoration: none;
+}
+
+.berg_text-black {
+    font-family: 'AvenirNext-Regular';
+    color: black;
+    text-decoration: none;
+}
+
 .berg_text-white:hover {
     color: white;
     text-decoration: none;
@@ -98,5 +126,5 @@
 }
 
 .berg_menu-icon:hover {
-    background-color: #104584;
+    background-color: rgba(0,0,0,0.3);
 }

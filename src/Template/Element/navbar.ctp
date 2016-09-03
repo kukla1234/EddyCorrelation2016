@@ -1,71 +1,37 @@
 <div class="berg_page-header berg_background-blue" >
-  <h2 >Aquatic Eddy Covariance Research Lab</h2>
-  <h3>at University of Virginia</h3>
+  <h2 class='berg_text-white'>Aquatic Eddy Covariance Research Lab</h2>
+  <h3 class='berg_text-white'>at University of Virginia</h3>
 </div>
 
-<nav class="berg_background-blue berg_navbar">
-  <a href="/">
-    <div class='berg_nav_button_basic'>
-      <p>Home</p>
-    </div>
-  </a>
-  
-  <a href="/principles/">
-    <div class='berg_nav_button_basic'>
-      <p>Principles</p>
-    </div>
-  </a>
-  
-  <a href="/publications/">
-    <div class='berg_nav_button_basic'>
-      <p>Publications</p>
-    </div>
-  </a>
-  
-  <a href="/team/">
-    <div class='berg_nav_button_basic'>
-      <p>Team</p>
-    </div>
-  </a>
-  
-  <a href="/gallery/">
-    <div class='berg_nav_button_basic'>
-      <p>Gallery</p>
-    </div>
-  </a>
-  
-  <a href="/presentations/">
-    <div class='berg_nav_button_basic'>
-      <p>Presentaions</p>
-    </div>
-  </a>
-
-  <a href="/weblinks">
-    <div class='berg_nav_button_basic'>
-      <p>Links &amp; Resources</p>
-    </div>
-  </a> 
-  
-  <div class="dropdown berg_nav_button_basic">
-    <a href="#" class="dropdown-toggle berg_text-white" data-toggle="dropdown">
-      Data Examples
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="/example-gulf"><b class="navtag nav-inner">Gulf of Mexico, Florida (Raw Data)</b></a>
-      </li>
-        
-      <li>
-        <a href="/example-fl-reef"><b class="navtag nav-inner">Floriday Keys - Coral Reefs</b></a>
-      </li>
-
-      <li>
-        <a href="/example-fl-sediments"><b class="navtag nav-inner">Floriday Keys - Permeable Sediments</b></a>
-      </li>
-  
-      <li>
-        <a href="/example-va-seagrass"><b class="navtag nav-inner">Eastern Shores, Virginia - Seagrass Beds</b></a>
-      </li>
-    </ul>
+<nav class='berg_background-blue berg_navbar'>
+  <div class='berg_padding-left'>
+    <?php echo $this->Html->image('menu_icon.png', ['alt' => 'Menu', 'class' => 'berg_menu-icon', 'id' => 'berg_menu-icon']); ?>
   </div>
 </nav>
+
+<div class='berg_hide berg_nav-dropdown berg_padding-left berg_background-blue berg_text-white' id='menu-dropdown'>
+    <ul class='berg_nav-list'> 
+      <a class='berg_text-white' href="/principles"><li class='berg_nav-list-item'>Home</li></a>
+      <a class='berg_text-white' href="/principles/"><li class='berg_nav-list-item'>Principles</li></a>
+      <a class='berg_text-white' href="/publications"><li class='berg_nav-list-item'>Publications</li></a>
+      <a class='berg_text-white' href="/team"><li class='berg_nav-list-item'>Team</li class='berg_nav-list-item'></a>
+      <a class='berg_text-white' href="/gallery"><li class='berg_nav-list-item'>Gallery</li></a>
+      <a class='berg_text-white' href="/presentations"><li class='berg_nav-list-item'>Presentations</li></a>
+      <a class='berg_text-white' href="/weblinks"><li class='berg_nav-list-item'>Weblinks</li></a>
+
+      <li class='berg_nav-list-divider'>Examples</li>
+
+      <a class='berg_text-white' href="/example-gulf/"><li class='berg_nav-list-item'>Gulf of Mexico</li></a>
+      <a class='berg_text-white' href="/example-fl-reef/"><li class='berg_nav-list-item'>Florida Reef</li></a>
+      <a class='berg_text-white' href="/example-fl-sediments/"><li class='berg_nav-list-item'>Florida Sediments</li ></a>
+      <a class='berg_text-white' href="/example-va-seagrass/"><li class='berg_nav-list-item'>Virginia Seagrass</li></a>
+    </ul>
+  </div>
+<?= $this->Html->script('jquery-3.1.0'); ?>
+  <script type="text/javascript">
+  $('#berg_menu-icon').click(function() {
+    $('#menu-dropdown').toggleClass('berg_hide');
+  });
+
+  </script>
+ <?= $this->Html->script('berg-nav'); ?>

@@ -2,7 +2,7 @@
  *  header and navigation css
  */
 .berg_page-header{
-    height: 200px;
+    height: 150px;
     padding-top: 60px;
     color: #EEEEEE;
     margin-top: -25px;
@@ -11,22 +11,66 @@
 
 .berg_background-blue{
     background-color: #3D6EA9; 
+    color: white;
+    text-decoration: none;
+}
+
+.berg_nav-list {
+    list-style: none;
+    font-size: .75rem;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.berg_nav-list-item {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.berg_nav-list-divider {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 40px;
+    background-color: #245B9C;
+    font-family: 'AvenirNext-Bold';
+    font-size: .85rem;
+}
+
+.berg_nav-list-item:hover {
+    background-color: #104584;
+}
+
+.berg_nav-dropdown {
+
+    width: 200px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    position: absolute;
+
+}
+
+.berg_hide {
+    display: none;
 }
 
 .berg_navbar {
     width: 100%;
-    height: 40px;
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);    
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
 }
+
+.berg_padding-left {
+    margin-left: 10%;
+}
+
+.berg_navbar_collapse {
+    
+}
+
 .berg_nav_button_basic {
-    font-family: 'AvenirNext-Regular';
-    width: 100px;
-    height: 40px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    display: inline-block;
-    float: left;
+    background-color: #3D6EA9;
 }
 
 .berg_nav_button_basic:hover {
@@ -42,4 +86,17 @@
 .berg_text-white:hover {
     color: white;
     text-decoration: none;
+}
+
+.berg_hidden {
+    display: none;
+}
+
+.berg_menu-icon {
+    height: 20px;
+    padding: 5px;
+}
+
+.berg_menu-icon:hover {
+    background-color: #104584;
 }

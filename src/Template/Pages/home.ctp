@@ -5,7 +5,6 @@ $this->element('cake_php_header')
 <html>
 <?= $this->element('head') ?>
 <?= $this->element('navbar') ?>
-<body class="home">
     <p>Hellow World, Home.</p>
-</body>
+<?= $this->element('footer') ?>
 </html>

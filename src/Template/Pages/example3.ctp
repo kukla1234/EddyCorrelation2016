@@ -8,4 +8,5 @@ $this->element('cake_php_header')
 <body class="home">
     <p>Hellow World, fl sediments.</p>
 </body>
+<?= $this->element('footer') ?>
 </html>

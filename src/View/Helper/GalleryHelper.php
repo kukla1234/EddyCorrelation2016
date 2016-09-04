@@ -75,7 +75,7 @@ class GalleryHelper extends Helper {
     */
     public function printGalleryImage($pathFromGallery, $fileName, $subsectionTitle, $sectionTitle) {
         $pathToFile = $pathFromGallery.'/'.$fileName;
-        echo '<a href=\''.$this->Url->webroot('img/').$pathToFile.'\' data-fresco-caption=\''.$sectionTitle.' | '.$subsectionTitle.'\' class=\'fresco\' data-fresco-group=\''.$pathFromGallery.'\'>' ;
+        echo '<a href=\''.$this->Url->webroot('img/').$pathToFile.'\' data-fresco-caption=\''.$sectionTitle.' | '.$subsectionTitle.'\' class=\'fresco\' data-fresco-group=\'berg-gallery\' data-fresco-group-options=\'loop: true\'\'>' ;
         echo $this->Html->image($pathToFile, ['alt' => 'Slide 1', 'class' => 'berg_gallery-image field']);
         echo '</a>'; 
     }

@@ -141,7 +141,7 @@ p {
 
 .berg_team-container {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -151,5 +151,14 @@ p {
 
 .berg_prof-thumbnail {
     height: 400px;
+}
+
+.info .berg_content-subtitle {
+    text-align: left;
+}
+
+.info .berg_content-status{
+    text-align: left;
+    font-size: 1rem;
 }
 

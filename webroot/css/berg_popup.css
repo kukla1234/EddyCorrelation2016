@@ -3,12 +3,10 @@
 }
 
 .size .field {
-    width:300px; 
     padding:10px; 
     border:none; 
     cursor:pointer;
-    font-family:'lucida sans unicode',sans-serif; 
-    font-size:1em;
+    font-size:.75em;
     border:solid 1px #f6f6f6;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -21,6 +19,7 @@
 }
 .size>div.info { display:none;
     position:absolute; 
+    text-align: left;
     left:0px; 
     top:0px; 
     z-index:999;

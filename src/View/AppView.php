@@ -38,5 +38,6 @@ class AppView extends View
     {
         parent::initialize();
         $this->loadHelper('Citation');
+        $this->loadHelper('Gallery');
     }
 }

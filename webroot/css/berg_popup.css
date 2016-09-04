@@ -20,6 +20,7 @@
 .size>div.info { display:none;
     position:absolute; 
     text-align: left;
+    z-index: 5;
     left:0px; 
     top:0px; 
     width:500px;

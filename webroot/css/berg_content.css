@@ -171,3 +171,21 @@ p {
     text-align: left;
 }
 
+.berg_gallery-segment {
+
+}
+
+.berg_gallery-section {
+        font-size: 1.5rem;
+}
+
+.berg_gallery-subsection {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.berg_gallery-image {
+    width: 30%;
+    max-width: 275px;
+
+}

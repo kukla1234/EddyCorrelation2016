@@ -13,8 +13,36 @@ $this->element('cake_php_header')
 <html>
 <?= $this->element('head') ?>
 <?= $this->element('navbar') ?>
-<body class="home">
-    <p>Hellow World, gallery.</p>
+<body>
+    <?= $this->Html->css('fresco/fresco.css')?>
+    <?= $this->Html->script('fresco/fresco'); ?>
+    <div class='berg_content'>
+        <h2 class='berg_content-title'>
+            Gallery
+        </h2>
+        
+        <div class='berg_gallery-segment'>
+
+            <div class='berg_gallery-section'>
+                <p class='berg_text-team-name'>
+                    Section Title
+                </p>
+                
+                <div class='berg_gallery-subsection'>
+                    <p class='berg_text-team-name'>
+                    SubSection Title
+                    </p>
+                    <?php 
+                    // $this->Gallery->printGallerySegment("earlydays","Early days",array("" => ""));
+                    $this->Gallery->printGalleryImage('easternshore','oysterbeds','P6190611.jpg');
+                     ?>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
 </body>
 <?= $this->element('footer') ?>
 </html>

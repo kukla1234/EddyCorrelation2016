@@ -21,28 +21,62 @@ $this->element('cake_php_header')
             Gallery
         </h2>
         
-        <div class='berg_gallery-segment'>
+<?php 
+            $easternshore = [
+                            "smallfreshwaterstreams"=> "Small Freshwater Streams",
+                            "oysterbeds" => "Oyster beds",
+                            "seagrassbeds" => "Seagrass beds" 
+                            ];
+            $this->Gallery->printGallerySection("easternshore","Eastern Shore",$easternshore);
 
-            <div class='berg_gallery-section'>
-                <p class='berg_text-team-name'>
-                    Section Title
-                </p>
-                
-                <div class='berg_gallery-subsection'>
-                    <p class='berg_text-team-name'>
-                    SubSection Title
-                    </p>
-                    <?php 
-                    // $this->Gallery->printGallerySegment("earlydays","Early days",array("" => ""));
-                    // $this->Gallery->printGalleryImage('easternshore','oysterbeds','P6190611.jpg');
-                    $this->Gallery->printGallerySubSection('easternshore','Oyster Beds','oysterbeds');
-                    $this->Gallery->printGallerySubSection('earlydays','Early Days');
+            $floridakeys = [
+                            "coralreefs" => "Coral Reefs",
+                            "permeablesediments" => "Permeable Sediments",
+                            "seagrassbeds" => "Seagrass Beds"
+                            ];
+            $this->Gallery->printGallerySection("floridakeys","Florida Keys",$floridakeys);
 
-                     ?>
-                </div>
-            </div>
-            
-        </div>
+            $floridagulf = [
+                            "permeablesediments"=>"Permeable Sediments"
+                            ];
+            $this->Gallery->printGallerySection("floridagulf","Gulf of Mexico, Florida",$floridagulf);
+
+            $floridawakulla = [
+                            "permeablesediments"=>"Permeable sediments"
+                            ];
+            $this->Gallery->printGallerySection("floridawakulla","Wakulla River, Florida",$floridawakulla);
+
+            $greenland = [
+                            "underseaice"=>"Upside Down, Under Sea Ice"
+                            ];
+            $this->Gallery->printGallerySection("greenland","Greenland",$greenland);
+
+            $japan = [
+                      "deepocean"=>"Deep ocean"
+                     ];
+            $this->Gallery->printGallerySection("japan","Japan",$japan);
+
+            $savannah = [
+                      "permeableshelfsediments" => "Permeable Sediments"
+                     ];
+            $this->Gallery->printGallerySection("savannah","Continental shelf, Georgia",$savannah);
+
+            $switzerland = [
+                      "freshwater"=>"Fresh water river sediments"
+                     ];
+            $this->Gallery->printGallerySection("switzerland","Switzerland",$switzerland);
+
+            $wisconsin = [
+                      "quaggamussels"=>"Quagga Mussels overgrown with filamentous algae"
+                     ];
+            $this->Gallery->printGallerySection("wisconsin","Great Lakes, Wisconsin",$wisconsin);
+
+            $woodshole = [
+                      "permeablesediments"=>"Permeable sediments"
+                     ];
+            $this->Gallery->printGallerySection("woodshole","Woods Hole, Massachusetts",$woodshole);
+
+?>
         
         
     </div>

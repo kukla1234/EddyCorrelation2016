@@ -15,11 +15,8 @@
         Eddy Covariance - Peter Berg
     </title>
     <?= $this->Html->meta('icon') ?>
-    <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('berg_navbar-footer.css') ?>
-    <?= $this->Html->css('bootstrap-nav.css') ?>
-    <?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('berg_content.css') ?>
     <?= $this->Html->css('flickity.css') ?>    
     <?= $this->Html->css('berg_popup.css') ?>    

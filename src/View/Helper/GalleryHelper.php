@@ -29,7 +29,7 @@ class GalleryHelper extends Helper {
         echo        '</p>';
         
         foreach ($subsections as $subdirectoryName => $subsectionTitle) {
-            $this->printGallerySubSection($directory, $subsectionTitle, $subdirectoryName);
+            $this->printGallerySubSection($directory, $subsectionTitle, $sectionTitle, $subdirectoryName);
         }            
         echo    '</div>';
     }
@@ -39,7 +39,7 @@ class GalleryHelper extends Helper {
     * @param String $subdirectory    - directory name to print (found in img/gallery/{directory}/{subdirectory})
     * @param String $subsectionTitle - desired name of subsection title
     */
-    public function printGallerySubSection($directory, $subsectionTitle, $subdirectory = null) {
+    public function printGallerySubSection($directory, $subsectionTitle, $sectionTitle, $subdirectory = null) {
         $path = "";
         $pathFromGallery = "";
         if ($subdirectory != null) {
@@ -63,7 +63,7 @@ class GalleryHelper extends Helper {
             if (!preg_match('/(?i)\.(jpg|png|gif)$/', $file)) {
                 continue;
             }
-            $this->printGalleryImage($pathFromGallery, $file);
+            $this->printGalleryImage($pathFromGallery, $file, $subsectionTitle, $sectionTitle);
         }
         echo '</div>';
 
@@ -73,32 +73,11 @@ class GalleryHelper extends Helper {
     * @param String $directory - directory name to print (found in img/gallery/{directory})
     * @param String $subdirectory - directory name to print (found in img/gallery/{directory}/{subdirectory})
     */
-    public function printGalleryImage($pathFromGallery, $fileName) {
+    public function printGalleryImage($pathFromGallery, $fileName, $subsectionTitle, $sectionTitle) {
         $pathToFile = $pathFromGallery.'/'.$fileName;
-        echo '<a href=\''.$this->Url->webroot('img/').$pathToFile.'\' class=\'fresco\' data-fresco-group=\''.$pathFromGallery.'\'>' ;
+        echo '<a href=\''.$this->Url->webroot('img/').$pathToFile.'\' data-fresco-caption=\''.$sectionTitle.' | '.$subsectionTitle.'\' class=\'fresco\' data-fresco-group=\''.$pathFromGallery.'\'>' ;
         echo $this->Html->image($pathToFile, ['alt' => 'Slide 1', 'class' => 'berg_gallery-image field']);
         echo '</a>'; 
-    }
-
-    /**
-    * @param String $directory - directory name to print (found in img/gallery/{directory})
-    *
-    * @return array
-    */
-    public function fetchImagesDirectory($path) {
-
-    }
-
-
-
-   public function printGallerySegment($header, $title, $sections) {
-        print '<div class="row-fluid">';
-        print '<div id='.$header.' class="gallery-section">';
-        foreach($sections as $sec => $subheader) {
-            $this->printGalleryNode($header, $sec, $title, $subheader);
-        }
-        print '</div><!--./gallery-section-->
-                </div><!--./row-fluid-->';
     }
 
 }

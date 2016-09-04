@@ -41,5 +41,8 @@
     </div>
     <?= $this->Html->script('jquery-3.1.0'); ?>
     <?= $this->Html->script('flickity.pkgd'); ?>
+    <?= $this->Html->script('berg_popup'); ?>
+
+    
 
 </div>

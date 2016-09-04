@@ -22,5 +22,6 @@
     <?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('berg_content.css') ?>
     <?= $this->Html->css('flickity.css') ?>    
+    <?= $this->Html->css('berg_popup.css') ?>    
     
 </head>

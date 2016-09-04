@@ -67,6 +67,11 @@ p {
     text-align: center;
 }
 
+.berg_text-team-name {
+    color: #12437D;
+    font-family: 'AvenirNext-Bold';
+}
+
 .berg_indent-block {
     margin: 20px 10%;
 }
@@ -128,3 +133,23 @@ p {
 .berg_citation-hover:hover {
     background-color: #f6f6f6;
 }
+
+.berg_team-tumbnail {
+    border-width: 10px 5px 30px 5px;
+    height: 250px;
+}
+
+.berg_team-container {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.berg_team-row {
+
+}
+
+.berg_prof-thumbnail {
+    height: 400px;
+}
+

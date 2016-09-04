@@ -34,6 +34,10 @@ class CitationHelper extends Helper
         echo "</p></a>";
     }
 
+    public function printWeblink($title, $link){
+        return '<a class=\'berg_citation-text\' href="'.$link.'">'.$title.'</a>';
+    }
+
 }
 
 ?>

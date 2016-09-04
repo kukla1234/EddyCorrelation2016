@@ -128,6 +128,7 @@ p {
     text-decoration: none;
     color: black;
     font-size: .75rem;
+
 }
 
 .berg_citation-hover:hover {
@@ -160,5 +161,13 @@ p {
 .info .berg_content-status{
     text-align: left;
     font-size: 1rem;
+}
+
+.berg_weblink {
+    padding: 15px 0;
+}
+
+.berg_weblink .text {
+    text-align: left;
 }
 

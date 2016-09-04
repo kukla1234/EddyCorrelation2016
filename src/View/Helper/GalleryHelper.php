@@ -9,6 +9,8 @@
 namespace App\View\Helper;
 
 use Cake\View\Helper;
+use Cake\Filesystem\Folder;
+use Cake\Filesystem\File;
 
 class GalleryHelper extends Helper {
 
@@ -29,7 +31,33 @@ class GalleryHelper extends Helper {
     * @param String $subdirectory    - directory name to print (found in img/gallery/{directory}/{subdirectory})
     * @param String $subsectionTitle - desired name of subsection title
     */
-    public function printGallerySubSection($directory, $subdirectory, $subsectionTitle) {
+    public function printGallerySubSection($directory, $subsectionTitle, $subdirectory = null) {
+        $path = "";
+        $pathFromGallery = "";
+        if ($subdirectory != null) {
+            $path = WWW_ROOT . 'img/gallery/'.$directory.'/'.$subdirectory.'/'.'pics/';
+            $pathFromGallery = 'gallery/'.$directory.'/'.$subdirectory.'/'.'pics';
+        }
+        else {
+            $path = WWW_ROOT . 'img/gallery/'.$directory.'/'.'pics/';
+            $pathFromGallery = 'gallery/'.$directory.'/'.'pics';
+        }
+
+        $dir = new Folder($path);
+        $dirContents = $dir->read();
+        $files = $dirContents[1];
+
+        echo '<div class=\'berg_gallery-subsection\'>';
+        echo            '<p class=\'berg_text-team-name\'>';
+        echo            $subsectionTitle;
+        echo            '</p>';
+        foreach ($files as $file) {
+            if (!preg_match('/(?i)\.(jpg|png|gif)$/', $file)) {
+                continue;
+            }
+            $this->printGalleryImage($pathFromGallery, $file);
+        }
+        echo '</div>';
 
     }
 
@@ -37,10 +65,10 @@ class GalleryHelper extends Helper {
     * @param String $directory - directory name to print (found in img/gallery/{directory})
     * @param String $subdirectory - directory name to print (found in img/gallery/{directory}/{subdirectory})
     */
-    public function printGalleryImage($directory, $subdirectory, $fileName) {
-        $pathFromGallery = 'gallery/'.$directory.'/'.$subdirectory.'/'.'pics'.'/'.$fileName;
-        echo '<a href=\''.$this->Url->webroot('img/').$pathFromGallery.'\' class=\'fresco\'>' ;
-        echo $this->Html->image($pathFromGallery, ['alt' => 'Slide 1', 'class' => 'berg_gallery-image']);
+    public function printGalleryImage($pathFromGallery, $fileName) {
+        $pathToFile = $pathFromGallery.'/'.$fileName;
+        echo '<a href=\''.$this->Url->webroot('img/').$pathToFile.'\' class=\'fresco\'>' ;
+        echo $this->Html->image($pathToFile, ['alt' => 'Slide 1', 'class' => 'berg_gallery-image']);
         echo '</a>'; 
     }
 
@@ -49,11 +77,8 @@ class GalleryHelper extends Helper {
     *
     * @return array
     */
-    public function fetchImagesDirectory($dir) {
-        $dirname = $this->dataRoot.$this->query.'/';
-        $images = glob($dirname.'*.jpg');
+    public function fetchImagesDirectory($path) {
 
-        return $images;
     }
 
 

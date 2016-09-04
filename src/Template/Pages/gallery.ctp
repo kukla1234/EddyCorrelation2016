@@ -34,7 +34,10 @@ $this->element('cake_php_header')
                     </p>
                     <?php 
                     // $this->Gallery->printGallerySegment("earlydays","Early days",array("" => ""));
-                    $this->Gallery->printGalleryImage('easternshore','oysterbeds','P6190611.jpg');
+                    // $this->Gallery->printGalleryImage('easternshore','oysterbeds','P6190611.jpg');
+                    $this->Gallery->printGallerySubSection('easternshore','Oyster Beds','oysterbeds');
+                    $this->Gallery->printGallerySubSection('earlydays','Early Days');
+
                      ?>
                 </div>
             </div>

@@ -7,15 +7,15 @@
     border:none; 
     cursor:pointer;
     font-size:.75em;
-    border:solid 1px #f6f6f6;
+    border:solid 2px #e6e6e6;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 .size .field:hover {
-    border:solid 1px #fff;
-    -moz-box-shadow:0 0 5px #999;
-    -webkit-box-shadow:0 0 5px #999; 
-    box-shadow:0 0 5px #999;
+    border:solid 2px #fff;
+    -moz-box-shadow:0 0 7px #999;
+    -webkit-box-shadow:0 0 7px #999; 
+    box-shadow:0 0 7px #999;
 }
 .size>div.info { display:none;
     position:absolute; 

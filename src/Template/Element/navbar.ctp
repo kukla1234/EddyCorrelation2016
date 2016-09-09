@@ -7,7 +7,7 @@
  */
  -->
 
-<nav class='berg_background-blue berg_navbar'>
+<nav class='berg_background-blue berg_max-width-800 berg_navbar'>
   <div class='berg_padding-left'>
     <?php echo $this->Html->image('menu_icon.png', ['alt' => 'Menu', 'class' => 'berg_menu-icon', 'id' => 'berg_menu-icon']); ?>
   </div>
@@ -32,7 +32,7 @@
   </ul>
 </div>
 
-<div class="berg_page-header berg_background-light-blue" >
+<div class="berg_page-header berg_max-width-800 berg_background-light-blue" >
   <h1 class='berg_text-white'>Aquatic Eddy Covariance Research Lab</h2>
   <h2 class='berg_text-white'>at University of Virginia</h3>
 </div>

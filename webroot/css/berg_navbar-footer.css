@@ -11,11 +11,16 @@
  *  header and navigation css
  */
 .berg_page-header{
-    padding-top: 60px;
+    padding-top: 114px;
     padding-bottom: 50px;
     color: #EEEEEE;
     text-align: center;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
+}
+
+.berg_max-width-800 {
+    width: 840px;
+    margin: 0 auto;
 }
 
 .berg_background-blue{
@@ -68,12 +73,13 @@
 
 .berg_nav-dropdown {
     width: 200px;
+    top: 54px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);    
     padding-top: 10px;
     padding-bottom: 15px;
-    position: absolute;
+    position: fixed;
     z-index: 10;
 
 }
@@ -83,7 +89,7 @@
 }
 
 .berg_navbar {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

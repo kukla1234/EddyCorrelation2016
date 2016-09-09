@@ -42,6 +42,7 @@ $this->element('cake_php_header')
             <?php 
             echo $this->Html->image('home/homepage1.jpg', ['alt' => 'Eddy Correlation 1', 'class' => 'berg_home-image']); 
             echo $this->Html->image('home/homepage2.jpg', ['alt' => 'Eddy Correlation 2', 'class' => 'berg_home-image']); ?>
+            <p>&copy; Markus Huettel</p>
         </div> 
         <div class='berg_clear-floats berg_content-single-pane'>
             <p>

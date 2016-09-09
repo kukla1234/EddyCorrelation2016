@@ -40,21 +40,27 @@ p {
 }
 
 .berg_home-content-right {
-    max-width: 300px;
-    width: 35%;
+    max-width: 350px;
+    width: 50%;
     margin-right: 20px;
+    text-align: center;
+    color: #999999;
 }
 
 .berg_home-content-left {
-    width: 55%;
+    width: 45%;
     max-width: 480px;
 }
 
 .berg_home-image {
-    max-width: 300px;
-    width: 90%;
+    max-width: 400px;
+    width: 95%;
     margin-right: 20px;
     margin-top: 20px;
+    border: solid;
+    border-color: #f6f6f6;
+    border-radius: 8px;
+    border-width: 10px;
 }
 
 .berg_content-title {

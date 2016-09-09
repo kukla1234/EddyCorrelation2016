@@ -30,6 +30,9 @@ $this->element('cake_php_header')
                 <p class='berg_content-subtitle berg_text-team-name'>
                     Peter Berg
                 </p>
+                <p class='berg_content-status berg_text-team-name'>
+                        Research Professor
+                    </p>
                 <p>
                     My educational background is in civil engineering. As an undergraduate I focused on mechanical design 
                     and construction while my graduate work focused, broadly speaking, on applied mathematical modeling of 

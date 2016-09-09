@@ -89,6 +89,8 @@
 }
 
 .berg_navbar {
+    /*z-index so nav bar is layered over team bio popups */
+    z-index: 10; 
     position: fixed;
     top: 0;
     left: 0;
